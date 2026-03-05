@@ -103,7 +103,7 @@ export default function App() {
   const [attendancePage, setAttendancePage] = useState(1);
   const [attendancePageSize, setAttendancePageSize] = useState(5);
 
-  const apiBase = useMemo(() => import.meta.env.VITE_API_URL || "http://localhost:8000", []);
+  const apiBase = useMemo(() => import.meta.env.VITE_API_URL || "https://etharaai-9rzk.onrender.com", []);
 
   const filteredEmployees = useMemo(() => {
     const query = employeeQuery.trim().toLowerCase();
