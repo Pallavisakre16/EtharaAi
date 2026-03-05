@@ -34,20 +34,20 @@ HRMS Lite provides:
 ```text
 .
 +-- backend
-¦   +-- app
-¦   ¦   +-- database.py
-¦   ¦   +-- main.py
-¦   ¦   +-- models.py
-¦   ¦   +-- schemas.py
-¦   +-- Dockerfile
-¦   +-- requirements.txt
+Â¦   +-- app
+Â¦   Â¦   +-- database.py
+Â¦   Â¦   +-- main.py
+Â¦   Â¦   +-- models.py
+Â¦   Â¦   +-- schemas.py
+Â¦   +-- Dockerfile
+Â¦   +-- requirements.txt
 +-- frontend
     +-- src
-    ¦   +-- components
-    ¦   +-- api.js
-    ¦   +-- App.jsx
-    ¦   +-- main.jsx
-    ¦   +-- styles.css
+    Â¦   +-- components
+    Â¦   +-- api.js
+    Â¦   +-- App.jsx
+    Â¦   +-- main.jsx
+    Â¦   +-- styles.css
     +-- package.json
 ```
 
@@ -100,8 +100,8 @@ Frontend default URL: `http://localhost:5173`
 4. Start Command: `uvicorn app.main:app --host 0.0.0.0 --port $PORT`
 5. Add env var `ALLOWED_ORIGINS` with your frontend domain.
 
-### Frontend on Vercel
-1. Import repository in Vercel.
+### Frontend on Netlify
+1. Import repository in Netlify.
 2. Set **Root Directory** to `frontend`.
 3. Build command: `npm run build`
 4. Output directory: `dist`
