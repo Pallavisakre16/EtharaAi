@@ -4,7 +4,7 @@
 # pydantic[email]==2.10.6
 fastapi
 uvicorn[standard]==0.34.0
-pydantic>=2
+pydantic[email]>=2
 sqlalchemy
 psycopg2-binary
 python-dotenv
